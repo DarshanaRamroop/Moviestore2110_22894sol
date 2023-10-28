@@ -11,8 +11,7 @@ namespace Moviestore2110_22894.tutorials.week2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int thetime = DateTime.Now;
-
+            int thetime = DateTime.Now.Hour;
             if (thetime < 12)
             {
                 HyperLink1.Text = "Visit Morning Session";
