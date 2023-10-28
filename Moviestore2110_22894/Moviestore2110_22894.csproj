@@ -319,6 +319,7 @@
     <Content Include="tutorials\week2\task1datetime.aspx" />
     <Content Include="tutorials\week2\task3.aspx" />
     <Content Include="tutorials\week2\task3controlevent.aspx" />
+    <Content Include="tutorials\week2\task4.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -456,6 +457,13 @@
     </Compile>
     <Compile Include="tutorials\week2\task3controlevent.aspx.designer.cs">
       <DependentUpon>task3controlevent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week2\task4.aspx.cs">
+      <DependentUpon>task4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week2\task4.aspx.designer.cs">
+      <DependentUpon>task4.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
