@@ -89,6 +89,8 @@ see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                                             href="~/tutorials/week2/task1datetime">Date and Time</a></li>
                                                <li><a runat="server" class="dropdown-item"
             href="~/tutorials/week2/clearmessagebutton.aspx">Clear message</a></li></ul></li>
+                                  <li><a runat="server" class="dropdown-item"
+      href="~/tutorials/week2/showandhidelabel.aspx">Show or hide label</a></li>
                                         <li><a runat="server" class="dropdown-item"
                                             href="~/tutorials/week2/task3controlevent">Control Events</a></li>
                                     </ul>
