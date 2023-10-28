@@ -25,6 +25,10 @@ namespace Moviestore2110_22894.tutorials.week2
                 {
                     Response.Redirect(choice);
                 }
+                else
+                {
+                    Response.Redirect("home.aspx"); 
+                }
 
 
             }
