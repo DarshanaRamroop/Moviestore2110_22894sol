@@ -21,7 +21,7 @@ namespace Moviestore2110_22894.tutorials.week2
 
                 string choice = Request.Form[DropDownList1.UniqueID];
 
-                    if (!string.IsNullOrEmpty(choice){
+                    if (!string.IsNullOrEmpty(choice)){
                     Response.Redirect(choice);
                 }
 
