@@ -87,7 +87,8 @@ see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                                     <ul class="dropdown-menu">
                                         <li><a runat="server" class="dropdown-item"
                                             href="~/tutorials/week2/task1datetime">Date and Time</a></li>
-                                         <li><a runat="server" class="dropdown-item" href="~tutorials/week2/clearmessagebutton">tutorials/week2/clearmessagebutton.aspx"</></a>">Clear Message</a></li>
+                                               <li><a runat="server" class="dropdown-item"
+            href="~\tutorials\week2\clearmessagebutton.aspx">Clear message</a></li></ul></li>
                                         <li><a runat="server" class="dropdown-item"
                                             href="~/tutorials/week2/task3controlevent">Control Events</a></li>
                                     </ul>
