@@ -93,7 +93,10 @@ see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                                          <li><a runat="server" class="dropdown-item"
                                         href="~/tutorials/week2/task3.aspx">Text Transfer</a></li>   
                                          <li><a runat="server" class="dropdown-item"
-                                             href="~/tutorials/week2/task4.aspx">Task 4</a></li>
+                                             href="~/tutorials/week2/task4.aspx">Task 4</a></li
+                                           <li><a runat="server" class="dropdown-item"
+                                            href="~/tutorials/week2/task5.aspx">Task 5</a></li>
+                                
                                 
                                          <li><a runat="server" class="dropdown-item"
                                             href="~/tutorials/week2/task3controlevent">Control Events</a></li>
