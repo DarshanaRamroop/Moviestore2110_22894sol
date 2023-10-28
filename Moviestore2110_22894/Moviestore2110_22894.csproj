@@ -317,6 +317,7 @@
     <Content Include="tutorials\week2\clearmessagebutton.aspx" />
     <Content Include="tutorials\week2\showandhidelabel.aspx" />
     <Content Include="tutorials\week2\task1datetime.aspx" />
+    <Content Include="tutorials\week2\task3.aspx" />
     <Content Include="tutorials\week2\task3controlevent.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -441,6 +442,13 @@
     </Compile>
     <Compile Include="tutorials\week2\task1datetime.aspx.designer.cs">
       <DependentUpon>task1datetime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week2\task3.aspx.cs">
+      <DependentUpon>task3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week2\task3.aspx.designer.cs">
+      <DependentUpon>task3.aspx</DependentUpon>
     </Compile>
     <Compile Include="tutorials\week2\task3controlevent.aspx.cs">
       <DependentUpon>task3controlevent.aspx</DependentUpon>
