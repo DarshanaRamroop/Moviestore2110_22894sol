@@ -98,6 +98,8 @@ see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                                             href="~/tutorials/week2/task5.aspx">Task 5</a></li>
                                             <li><a runat="server" class="dropdown-item"
                                             href="~/tutorials/week2/task6.aspx">Task 6</a></li>
+                                            <li><a runat="server" class="dropdown-item"
+                                            href="~/tutorials/week2/task7.aspx">Task 7</a></li>
 
                                 
                                 
