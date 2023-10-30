@@ -314,6 +314,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="testimonials.aspx" />
+    <Content Include="tutorials\main.aspx" />
     <Content Include="tutorials\week2\clearmessagebutton.aspx" />
     <Content Include="tutorials\week2\showandhidelabel.aspx" />
     <Content Include="tutorials\week2\task1datetime.aspx" />
@@ -425,6 +426,13 @@
     </Compile>
     <Compile Include="testimonials.aspx.designer.cs">
       <DependentUpon>testimonials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
     </Compile>
     <Compile Include="tutorials\week2\clearmessagebutton.aspx.cs">
       <DependentUpon>clearmessagebutton.aspx</DependentUpon>
