@@ -62,6 +62,15 @@
          CssClass="form-control" />
 
  </div>
+
+    <div class="mb-3">
+    <asp:Label runat="server"
+        CssClass="form-label">Mobile number</asp:Label>
+
+    <asp:TextBox runat="server" ID="Txtmobile" TextMode="Phone"
+        CssClass="form-control" />
+
+</div>
  <div class="mb-3">
      <asp:Label runat="server"
          CssClass="form-label">Email</asp:Label>

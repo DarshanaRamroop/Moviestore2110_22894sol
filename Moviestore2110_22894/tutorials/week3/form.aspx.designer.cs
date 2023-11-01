@@ -87,6 +87,15 @@ namespace Moviestore2110_22894.tutorials.week3
         protected global::System.Web.UI.WebControls.TextBox txtdob;
 
         /// <summary>
+        /// Txtmobile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txtmobile;
+
+        /// <summary>
         /// txtEmail control.
         /// </summary>
         /// <remarks>
