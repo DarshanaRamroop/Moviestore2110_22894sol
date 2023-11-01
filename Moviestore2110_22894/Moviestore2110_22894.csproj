@@ -103,6 +103,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\ads.xml" />
+    <Content Include="App_Data\countries.xml" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="assets\css\style.css" />
     <Content Include="assets\img\apple-touch-icon.png" />
     <Content Include="assets\img\blog\blog-1.jpg" />
@@ -227,8 +233,17 @@
     <Content Include="Global.asax" />
     <Content Include="home.aspx" />
     <Content Include="homepage.aspx" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
     <Content Include="images\avatar-163725.jpg" />
+    <Content Include="images\bell.png" />
+    <Content Include="images\calendar.png" />
+    <Content Include="images\email.png" />
     <Content Include="images\mac.jpg" />
+    <Content Include="images\register.png" />
+    <Content Include="images\smiley.jpg" />
+    <Content Include="images\social.png" />
     <Content Include="login.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -314,7 +329,6 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="testimonials.aspx" />
-    <Content Include="tutorials\main.aspx" />
     <Content Include="tutorials\week2\clearmessagebutton.aspx" />
     <Content Include="tutorials\week2\showandhidelabel.aspx" />
     <Content Include="tutorials\week2\task1datetime.aspx" />
@@ -324,6 +338,7 @@
     <Content Include="tutorials\week2\task5.aspx" />
     <Content Include="tutorials\week2\task6.aspx" />
     <Content Include="tutorials\week2\task7.aspx" />
+    <Content Include="tutorials\week3\formdemo.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -427,13 +442,6 @@
     <Compile Include="testimonials.aspx.designer.cs">
       <DependentUpon>testimonials.aspx</DependentUpon>
     </Compile>
-    <Compile Include="tutorials\main.aspx.cs">
-      <DependentUpon>main.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="tutorials\main.aspx.designer.cs">
-      <DependentUpon>main.aspx</DependentUpon>
-    </Compile>
     <Compile Include="tutorials\week2\clearmessagebutton.aspx.cs">
       <DependentUpon>clearmessagebutton.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -497,6 +505,13 @@
     <Compile Include="tutorials\week2\task7.aspx.designer.cs">
       <DependentUpon>task7.aspx</DependentUpon>
     </Compile>
+    <Compile Include="tutorials\week3\formdemo.aspx.cs">
+      <DependentUpon>formdemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week3\formdemo.aspx.designer.cs">
+      <DependentUpon>formdemo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -505,9 +520,7 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />

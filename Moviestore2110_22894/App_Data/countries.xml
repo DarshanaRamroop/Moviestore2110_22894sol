@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Countries>
+	<country>
+		<countryId>
+			001
+		</countryId>
+		<countryName>
+			Spain
+		</countryName>
+	</country>
+
+	<country>
+		<countryId>
+			002
+		</countryId>
+		<countryName>
+			USA
+		</countryName>
+	</country>
+
+	<country>
+		<countryId>
+			003
+		</countryId>
+		<countryName>
+			Mauritius
+		</countryName>
+	</country>
+
+</Countries>
