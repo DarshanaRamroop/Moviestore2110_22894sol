@@ -105,8 +105,6 @@ see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                                 
                                          <li><a runat="server" class="dropdown-item"
                                             href="~/tutorials/week2/task3controlevent">Control Events</a></li>
-                                    </ul>
-                                </li>
                        
                    <li class="dropdown-submenu">
             <a class="dropdown-item dropdown-toggle"
