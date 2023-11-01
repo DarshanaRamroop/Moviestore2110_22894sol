@@ -6,9 +6,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace moviestore2110_22894.tutorials.week3
+namespace Moviestore2110_22894.tutorials.week3
 {
-    public partial class formdemo : System.Web.UI.Page
+    public partial class form : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -27,18 +27,18 @@ namespace moviestore2110_22894.tutorials.week3
                 txtFname.Focus();
 
                 //Xml link to populate Dropdown Countries by using Data from File
-                ListItem lidefCountry = new ListItem("Choose Country","-1");
+                ListItem lidefCountry = new ListItem("Choose Country", "-1");
                 string physicalPath = Server.MapPath("~/App_Data/countries.xml");
                 DataSet dstCountries = new DataSet();
                 dstCountries.ReadXml(physicalPath);
                 ddlCountries.DataSource = dstCountries;
                 ddlCountries.DataTextField = "countryName";
-                ddlCountries.DataValueField= "countryId";
+                ddlCountries.DataValueField = "countryId";
                 ddlCountries.DataBind();
-                ddlCountries.Items.Insert(0,lidefCountry);
+                ddlCountries.Items.Insert(0, lidefCountry);
 
             }
-            
+
 
 
         }
@@ -86,7 +86,9 @@ namespace moviestore2110_22894.tutorials.week3
         {
             txtFname.Text = "";
             ddlZipCode.SelectedIndex = 0;
-            
+
         }
+
+    }
     }
 }

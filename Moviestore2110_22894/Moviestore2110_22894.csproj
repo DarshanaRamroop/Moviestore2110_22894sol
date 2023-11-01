@@ -338,7 +338,7 @@
     <Content Include="tutorials\week2\task5.aspx" />
     <Content Include="tutorials\week2\task6.aspx" />
     <Content Include="tutorials\week2\task7.aspx" />
-    <Content Include="tutorials\week3\formdemo.aspx" />
+    <Content Include="tutorials\week3\form.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -505,12 +505,12 @@
     <Compile Include="tutorials\week2\task7.aspx.designer.cs">
       <DependentUpon>task7.aspx</DependentUpon>
     </Compile>
-    <Compile Include="tutorials\week3\formdemo.aspx.cs">
-      <DependentUpon>formdemo.aspx</DependentUpon>
+    <Compile Include="tutorials\week3\form.aspx.cs">
+      <DependentUpon>form.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="tutorials\week3\formdemo.aspx.designer.cs">
-      <DependentUpon>formdemo.aspx</DependentUpon>
+    <Compile Include="tutorials\week3\form.aspx.designer.cs">
+      <DependentUpon>form.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

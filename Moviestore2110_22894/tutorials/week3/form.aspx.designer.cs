@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace moviestore2110_22894tutorials.week3
+namespace Moviestore2110_22894.tutorials.week3
 {
 
 
-    public partial class formdemo
+    public partial class form
     {
 
         /// <summary>
