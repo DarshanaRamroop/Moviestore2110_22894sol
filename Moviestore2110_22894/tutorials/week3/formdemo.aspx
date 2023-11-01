@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/guestmasterpage.Master" AutoEventWireup="true" CodeBehind="formdemo.aspx.cs" Inherits="moviestore2110_22876.tutorials.week3.formdemo" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/guestmasterpage.Master" AutoEventWireup="true" CodeBehind="formdemo.aspx.cs" Inherits="moviestore2110_22894tutorials.week3.formdemo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace moviestore2110_22876.tutorials.week3
+namespace moviestore2110_22894tutorials.week3
 {
 
 
