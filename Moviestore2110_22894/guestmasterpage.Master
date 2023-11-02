@@ -126,6 +126,28 @@ see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
      href="~/tutorials/week3/task1.aspx">Task1</a></li>
                             <li><a runat="server" class="dropdown-item"
 href="~/tutorials/week3/task2.asp">Task2</a></li>
+                                            <li><a runat="server" class="dropdown-item"
+href="~/tutorials/week3/task3.aspx">Task3</a></li>
+                                                            <li><a runat="server" class="dropdown-item"
+href="~/tutorials/week3/task4.aspx">Task4</a></li>
+                
+                                                            <li><a runat="server" class="dropdown-item"
+href="~/tutorials/week3/task5.aspx">Task5</a></li>
+                
+                                                            <li><a runat="server" class="dropdown-item"
+href="~/tutorials/week3/task6.aspx">Task6</a></li>
+                
+                                                            <li><a runat="server" class="dropdown-item"
+href="~/tutorials/week3/task7.aspx">Task7</a></li>
+                
+                                                            <li><a runat="server" class="dropdown-item"
+href="~/tutorials/week3/task8.aspx">Task8</a></li>
+                
+                                                            <li><a runat="server" class="dropdown-item"
+href="~/tutorials/week3/task9.aspx">Task9</a></li>
+                
+                                                            <li><a runat="server" class="dropdown-item"
+href="~/tutorials/week3/task10.aspx">Task10</a></li>
                       
     </ul>
 </li>
