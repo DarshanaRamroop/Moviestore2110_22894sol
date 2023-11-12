@@ -349,6 +349,9 @@
     <Content Include="tutorials\week3\task7.aspx" />
     <Content Include="tutorials\week3\task8.aspx" />
     <Content Include="tutorials\week3\task9.aspx" />
+    <Content Include="tutorials\week4\task2.aspx" />
+    <Content Include="tutorials\week4\task3.aspx" />
+    <Content Include="tutorials\week4\task4.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -591,6 +594,27 @@
     </Compile>
     <Compile Include="tutorials\week3\task9.aspx.designer.cs">
       <DependentUpon>task9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week4\task2.aspx.cs">
+      <DependentUpon>task2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week4\task2.aspx.designer.cs">
+      <DependentUpon>task2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week4\task3.aspx.cs">
+      <DependentUpon>task3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week4\task3.aspx.designer.cs">
+      <DependentUpon>task3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week4\task4.aspx.cs">
+      <DependentUpon>task4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week4\task4.aspx.designer.cs">
+      <DependentUpon>task4.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

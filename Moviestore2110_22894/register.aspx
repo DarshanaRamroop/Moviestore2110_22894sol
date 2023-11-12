@@ -9,6 +9,8 @@
     </p>
     <h4>Create a new account.</h4>
     <hr />
+
+
     <asp:ValidationSummary runat="server" CssClass="text-danger" />
     <div class="mb-3">
         <asp:Label runat="server" AssociatedControlID="UserName"
