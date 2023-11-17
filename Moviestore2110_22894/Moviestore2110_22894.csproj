@@ -329,7 +329,9 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="testimonials.aspx" />
+    <Content Include="tutorials\week2\addressform.ascx" />
     <Content Include="tutorials\week2\clearmessagebutton.aspx" />
+    <Content Include="tutorials\week2\showaddress.aspx" />
     <Content Include="tutorials\week2\showandhidelabel.aspx" />
     <Content Include="tutorials\week2\task1datetime.aspx" />
     <Content Include="tutorials\week2\task3.aspx" />
@@ -352,6 +354,14 @@
     <Content Include="tutorials\week4\task2.aspx" />
     <Content Include="tutorials\week4\task3.aspx" />
     <Content Include="tutorials\week4\task4.aspx" />
+    <Content Include="tutorials\week5\addressform.ascx" />
+    <Content Include="tutorials\week5\login.aspx" />
+    <Content Include="tutorials\week5\logincrcl.ascx" />
+    <Content Include="tutorials\week5\randomimage.ascx" />
+    <Content Include="tutorials\week5\rndquotation.ascx" />
+    <Content Include="tutorials\week5\showaddress.aspx" />
+    <Content Include="tutorials\week5\showcode.aspx" />
+    <Content Include="tutorials\week5\showrandomimage.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -455,12 +465,26 @@
     <Compile Include="testimonials.aspx.designer.cs">
       <DependentUpon>testimonials.aspx</DependentUpon>
     </Compile>
+    <Compile Include="tutorials\week2\addressform.ascx.cs">
+      <DependentUpon>addressform.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week2\addressform.ascx.designer.cs">
+      <DependentUpon>addressform.ascx</DependentUpon>
+    </Compile>
     <Compile Include="tutorials\week2\clearmessagebutton.aspx.cs">
       <DependentUpon>clearmessagebutton.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="tutorials\week2\clearmessagebutton.aspx.designer.cs">
       <DependentUpon>clearmessagebutton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week2\showaddress.aspx.cs">
+      <DependentUpon>showaddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week2\showaddress.aspx.designer.cs">
+      <DependentUpon>showaddress.aspx</DependentUpon>
     </Compile>
     <Compile Include="tutorials\week2\showandhidelabel.aspx.cs">
       <DependentUpon>showandhidelabel.aspx</DependentUpon>
@@ -616,6 +640,62 @@
     <Compile Include="tutorials\week4\task4.aspx.designer.cs">
       <DependentUpon>task4.aspx</DependentUpon>
     </Compile>
+    <Compile Include="tutorials\week5\addressform.ascx.cs">
+      <DependentUpon>addressform.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\addressform.ascx.designer.cs">
+      <DependentUpon>addressform.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\logincrcl.ascx.cs">
+      <DependentUpon>logincrcl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\logincrcl.ascx.designer.cs">
+      <DependentUpon>logincrcl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\randomimage.ascx.cs">
+      <DependentUpon>randomimage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\randomimage.ascx.designer.cs">
+      <DependentUpon>randomimage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\rndquotation.ascx.cs">
+      <DependentUpon>rndquotation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\rndquotation.ascx.designer.cs">
+      <DependentUpon>rndquotation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\showaddress.aspx.cs">
+      <DependentUpon>showaddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\showaddress.aspx.designer.cs">
+      <DependentUpon>showaddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\showcode.aspx.cs">
+      <DependentUpon>showcode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\showcode.aspx.designer.cs">
+      <DependentUpon>showcode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\showrandomimage.aspx.cs">
+      <DependentUpon>showrandomimage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\showrandomimage.aspx.designer.cs">
+      <DependentUpon>showrandomimage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -624,7 +704,9 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="tutorials\week5\uc\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
