@@ -105,9 +105,9 @@
     <Content Include="About.aspx" />
     <Content Include="App_Data\ads.xml" />
     <Content Include="App_Data\countries.xml" />
-    <Content Include="App_Data\Database1.mdf" />
-    <Content Include="App_Data\Database1_log.ldf">
-      <DependentUpon>Database1.mdf</DependentUpon>
+    <Content Include="App_Data\moviesDB.mdf" />
+    <Content Include="App_Data\moviesDB_log.ldf">
+      <DependentUpon>moviesDB.mdf</DependentUpon>
     </Content>
     <Content Include="assets\css\style.css" />
     <Content Include="assets\img\apple-touch-icon.png" />
@@ -234,16 +234,46 @@
     <Content Include="home.aspx" />
     <Content Include="homepage.aspx" />
     <Content Include="images\1.jpg" />
+    <Content Include="images\1917.jpg" />
     <Content Include="images\2.jpg" />
     <Content Include="images\3.jpg" />
     <Content Include="images\avatar-163725.jpg" />
+    <Content Include="images\avatar.jpg" />
+    <Content Include="images\avatar2.png" />
+    <Content Include="images\avatar3.png" />
+    <Content Include="images\avatar4.png" />
+    <Content Include="images\avatar5.jpg" />
     <Content Include="images\bell.png" />
+    <Content Include="images\blade.jpg" />
+    <Content Include="images\brave.jpg" />
     <Content Include="images\calendar.png" />
+    <Content Include="images\deer.jpg" />
+    <Content Include="images\Delete.png" />
     <Content Include="images\email.png" />
+    <Content Include="images\game.jpg" />
+    <Content Include="images\ghost.jpg" />
+    <Content Include="images\grey.jpg" />
+    <Content Include="images\harry.jpg" />
+    <Content Include="images\home.jpg" />
+    <Content Include="images\Home.png" />
+    <Content Include="images\joker.jpg" />
+    <Content Include="images\jumanji.jpg" />
+    <Content Include="images\Last.png" />
+    <Content Include="images\lion.jpg" />
     <Content Include="images\mac.jpg" />
+    <Content Include="images\moonlight.jpg" />
+    <Content Include="images\Next.png" />
+    <Content Include="images\OK.png" />
+    <Content Include="images\Previous.png" />
     <Content Include="images\register.png" />
+    <Content Include="images\replicas.jpg" />
+    <Content Include="images\s2.jpg" />
+    <Content Include="images\samp1.jpg" />
+    <Content Include="images\samp2.jpg" />
     <Content Include="images\smiley.jpg" />
     <Content Include="images\social.png" />
+    <Content Include="images\tarzan.jpg" />
+    <Content Include="images\titanic.jpg" />
     <Content Include="login.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -362,6 +392,11 @@
     <Content Include="tutorials\week5\showaddress.aspx" />
     <Content Include="tutorials\week5\showcode.aspx" />
     <Content Include="tutorials\week5\showrandomimage.aspx" />
+    <Content Include="tutorials\week6\ex1.aspx" />
+    <Content Include="tutorials\week6\ex2.aspx" />
+    <Content Include="tutorials\week6\ex3.aspx" />
+    <Content Include="tutorials\week6\ex4.aspx" />
+    <Content Include="tutorials\week6\stats.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -695,6 +730,41 @@
     </Compile>
     <Compile Include="tutorials\week5\showrandomimage.aspx.designer.cs">
       <DependentUpon>showrandomimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week6\ex1.aspx.cs">
+      <DependentUpon>ex1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week6\ex1.aspx.designer.cs">
+      <DependentUpon>ex1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week6\ex2.aspx.cs">
+      <DependentUpon>ex2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week6\ex2.aspx.designer.cs">
+      <DependentUpon>ex2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week6\ex3.aspx.cs">
+      <DependentUpon>ex3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week6\ex3.aspx.designer.cs">
+      <DependentUpon>ex3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week6\ex4.aspx.cs">
+      <DependentUpon>ex4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week6\ex4.aspx.designer.cs">
+      <DependentUpon>ex4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week6\stats.aspx.cs">
+      <DependentUpon>stats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week6\stats.aspx.designer.cs">
+      <DependentUpon>stats.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
