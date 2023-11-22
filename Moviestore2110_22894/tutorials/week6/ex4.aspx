@@ -22,6 +22,7 @@ Height="200" runat="server" />
 <p>
 <b>Moviename</b> ~<%#Eval("Moviename") %>
 <b>BOX Totals: </b>~<%#Eval("Boxofficetotals") %>
+
 </p>
 
 <p><%#Eval("Description",, "{0:c}") %></p>~
