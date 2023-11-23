@@ -397,6 +397,8 @@
     <Content Include="tutorials\week6\ex3.aspx" />
     <Content Include="tutorials\week6\ex4.aspx" />
     <Content Include="tutorials\week6\stats.aspx" />
+    <Content Include="tutorials\week7\details.aspx" />
+    <Content Include="tutorials\week7\ex1.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -766,6 +768,20 @@
     <Compile Include="tutorials\week6\stats.aspx.designer.cs">
       <DependentUpon>stats.aspx</DependentUpon>
     </Compile>
+    <Compile Include="tutorials\week7\details.aspx.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week7\details.aspx.designer.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week7\ex1.aspx.cs">
+      <DependentUpon>ex1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week7\ex1.aspx.designer.cs">
+      <DependentUpon>ex1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -776,7 +792,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="tutorials\week5\uc\" />
-    <Folder Include="tutorials\week7\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
