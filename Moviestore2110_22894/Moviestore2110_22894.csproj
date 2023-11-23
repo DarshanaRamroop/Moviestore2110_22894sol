@@ -776,6 +776,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="tutorials\week5\uc\" />
+    <Folder Include="tutorials\week7\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
