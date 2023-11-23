@@ -16,11 +16,34 @@ namespace Moviestore2110_22894.tutorials.week7
 WebConfigurationManager.ConnectionStrings["MoviesCS"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!Page.IsPostBack)
             {
                 getMovielist();
             }
 
+        }
+
+        private void getMovielist()
+        {
+            // Create Connection
+            SqlConnection con = new SqlConnection(_conString);
+            // Create Command
+            SqlCommand cmd = new SqlCommand();
+            int qs = Convert.ToInt32(Request.QueryString["Movie_Id"]);
+            cmd.CommandText =
+"SELECT * FROM tblMovies WHERE Movie_Id = " + qs;
+
+            cmd.Connection = con;
+            // Create DataAdapter (Refer to slide 8)
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dtMovies = new DataTable();
+            using (da)
+            {
+                da.Fill(dtMovies);
+            }
+            DetailsView1.DataSource = dtMovies;
+            DetailsView1.DataBind();
         }
 
     }

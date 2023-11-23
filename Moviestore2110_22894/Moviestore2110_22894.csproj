@@ -399,6 +399,8 @@
     <Content Include="tutorials\week6\stats.aspx" />
     <Content Include="tutorials\week7\details.aspx" />
     <Content Include="tutorials\week7\ex1.aspx" />
+    <Content Include="tutorials\week7\managemovies.aspx" />
+    <Content Include="tutorials\week7\search.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -781,6 +783,20 @@
     </Compile>
     <Compile Include="tutorials\week7\ex1.aspx.designer.cs">
       <DependentUpon>ex1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week7\managemovies.aspx.cs">
+      <DependentUpon>managemovies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week7\managemovies.aspx.designer.cs">
+      <DependentUpon>managemovies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week7\search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week7\search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
