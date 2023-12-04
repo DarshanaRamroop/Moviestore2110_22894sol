@@ -90,6 +90,28 @@ see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
+
+                        <asp:Panel runat="server" class="nav navbar-nav" ID="pnlprofile"
+Visible="false">
+<li class="dropdown">
+<a href="#" class="nav-link dropdown-toggle"
+
+data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-
+expanded="false">Users <span class="caret"></span></a>
+
+<ul class="dropdown-menu">
+<li>
+<asp:HyperLink cssclass="dropdown-item"
+runat="server" ID="hyuser"
+NavigateUrl="~/tutorials/week5/updateprofile.aspx" >View
+Profile</asp:HyperLink></li>
+<li role="separator" class="divider"></li>
+<li>
+<asp:Button runat="server" ID="btndeacuser"
+Text="Deactivate Account" CssClass="btn btn-outline-danger" /></li>
+</ul>
+</li>
+</asp:Panel>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="/testimonials">Testimonials</a></li>
@@ -157,6 +179,11 @@ see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                                 href="~/Register">Register</a></li>
                         </ul>
                     </div>
+                    <asp:Panel runat="server" ID="lgregis">
+<asp:Label runat="server" ID="lbllgged"></asp:Label>
+<asp:Button runat="server" ID="btnlgout" Text="Log out"
+CssClass="btn btn-outline-info" Visible="false" />
+</asp:Panel>
                 </div>
             </nav>
             <div id="main" class="container body-content">

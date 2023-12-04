@@ -388,10 +388,12 @@
     <Content Include="tutorials\week5\login.aspx" />
     <Content Include="tutorials\week5\logincrcl.ascx" />
     <Content Include="tutorials\week5\randomimage.ascx" />
+    <Content Include="tutorials\week5\regis.aspx" />
     <Content Include="tutorials\week5\rndquotation.ascx" />
     <Content Include="tutorials\week5\showaddress.aspx" />
     <Content Include="tutorials\week5\showcode.aspx" />
     <Content Include="tutorials\week5\showrandomimage.aspx" />
+    <Content Include="tutorials\week5\Updateprofile.aspx" />
     <Content Include="tutorials\week6\ex1.aspx" />
     <Content Include="tutorials\week6\ex2.aspx" />
     <Content Include="tutorials\week6\ex3.aspx" />
@@ -707,6 +709,13 @@
     <Compile Include="tutorials\week5\randomimage.ascx.designer.cs">
       <DependentUpon>randomimage.ascx</DependentUpon>
     </Compile>
+    <Compile Include="tutorials\week5\regis.aspx.cs">
+      <DependentUpon>regis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\regis.aspx.designer.cs">
+      <DependentUpon>regis.aspx</DependentUpon>
+    </Compile>
     <Compile Include="tutorials\week5\rndquotation.ascx.cs">
       <DependentUpon>rndquotation.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -734,6 +743,13 @@
     </Compile>
     <Compile Include="tutorials\week5\showrandomimage.aspx.designer.cs">
       <DependentUpon>showrandomimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\Updateprofile.aspx.cs">
+      <DependentUpon>Updateprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\Updateprofile.aspx.designer.cs">
+      <DependentUpon>Updateprofile.aspx</DependentUpon>
     </Compile>
     <Compile Include="tutorials\week6\ex1.aspx.cs">
       <DependentUpon>ex1.aspx</DependentUpon>

@@ -15,13 +15,13 @@ namespace Moviestore2110_22894.tutorials.week5
     {
 
         /// <summary>
-        /// logincrcl control.
+        /// userLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Moviestore2110_22894.tutorials.week5.logincrcl logincrcl;
+        protected global::Moviestore2110_22894.tutorials.week5.logincrcl userLogin;
 
         /// <summary>
         /// btnLogin control.

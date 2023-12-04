@@ -12,16 +12,16 @@
             <fieldset>
                 <legend>Member Login</legend>
                 <div class="form">
-                    <user:logincrcl runat="server" ID="logincrcl" />
+                    <user:logincrcl ID="userLogin" runat="server" ValidationGroup="login" />
                     <br />
                     <br />
-                    <asp:Button ID="btnLogin" runat="server"
+                    <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click"
                         CssClass="btn btn-outline-primary" Text="Log in" ValidationGroup="login" />
                 </div>
             </fieldset>
             <fieldset>
                 <asp:Label ID="lblmsg" runat="server" Text=""></asp:Label><br />
-                <asp:Button ID="btnRegister" runat="server"
+                <asp:Button ID="btnRegister" runat="server" 
                     PostBackUrl="~/tutorials/week5/register.aspx" Text="Don’t have an account yet? Join now"
                     CausesValidation="false" CssClass="btn btn-outline-warning" /><br />
             </fieldset>
