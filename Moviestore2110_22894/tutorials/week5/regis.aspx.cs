@@ -20,7 +20,7 @@ using System.Threading.Tasks;
 
 namespace Moviestore2110_22894.tutorials.week5
 {
-    public partial class regis : System.Web.UI.Page
+    public partial class regiss : System.Web.UI.Page
     {
         private string _conString = WebConfigurationManager.ConnectionStrings["MoviesCS"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)

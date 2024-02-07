@@ -1,6 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="guestmasterpage.master.cs" Inherits="moviestore2110_22876.guestmasterpage" %>
 
-<%@ Register Src="~/tutorials/week5/logincrcl.ascx" TagPrefix="user" TagName="logincrcl" %>
+<%@ Register Src="~/tutorials/week5/logincrcl.ascx" TagPrefix="user" TagName="login" %>
+
 
 
 
@@ -21,24 +22,26 @@
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
         rel="stylesheet" />
-    <link href="Content/bootstrap5.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
-    <script src='<%= ResolveClientUrl("~/Scripts/jquery-3.7.1.js") %>'> </script>
-    <script src='<%= ResolveClientUrl("~/Scripts/bootstrap5.bundle.min.js") %>'> </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+/>
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.css"/>
+   
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <style>
-        .modal-header, h4, .close {
-            background-color: #5cb85c;
-            color: white !important;
-            text-align: center;
-            font-size: 30px;
-        }
 
-        .modal-footer {
-            background-color: #f9f9f9;
-        }
-    </style>
+    <style>
+ .modal-header, h4, .close {
+ background-color: #5cb85c;
+ color: white !important;
+ text-align: center;
+ font-size: 30px;
+ }
+ .modal-footer {
+ background-color: #f9f9f9;
+ }
+</style>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -91,27 +94,55 @@ see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                             </div>
                         </li>
 
-                        <asp:Panel runat="server" class="nav navbar-nav" ID="pnlprofile"
-Visible="false">
-<li class="dropdown">
-<a href="#" class="nav-link dropdown-toggle"
+                           <!-- Menu to view user profile -->   
+<asp:Panel runat="server" class="nav navbar-nav" ID="pnlprofile" Visible="false"> 
+                                <li class="dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" 
+data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Users <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <asp:HyperLink cssclass="dropdown-item" runat="server" ID="hyuser">View Profile</asp:HyperLink></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li>
+                                            <asp:Button runat="server" ID="btndeacuser" Text="Deactivate Account"
+ CssClass="btn btn-outline-danger" /></li>
+                                    </ul>
+                                </li>
+                            </asp:Panel>
 
-data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-
-expanded="false">Users <span class="caret"></span></a>
+<!--menu to manage movies-->
+<asp:Panel runat="server" class="nav navbar-nav" ID="pnlmanagemov" Visible="false">
+                                <li class="dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" 
+data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage Movies <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" 
+href="<%= ResolveClientUrl("~/tutorials/week/viewmovies") %>">View Movies</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a class="dropdown-item" 
+href="<%= ResolveClientUrl("~/tutorials/week/managemovies") %>">Pending request List</a></li> 
+                                        <li><a class="dropdown-item" 
+						
+href="<%= ResolveClientUrl("~/tutorials/week/moviesubscriptionlist") %>">Subscription List</a></li>
+                                    </ul>
+                                </li>
+                            </asp:Panel>
 
-<ul class="dropdown-menu">
-<li>
-<asp:HyperLink cssclass="dropdown-item"
-runat="server" ID="hyuser"
-NavigateUrl="~/tutorials/week5/updateprofile.aspx" >View
-Profile</asp:HyperLink></li>
-<li role="separator" class="divider"></li>
-<li>
-<asp:Button runat="server" ID="btndeacuser"
-Text="Deactivate Account" CssClass="btn btn-outline-danger" /></li>
-</ul>
-</li>
+<!--menu to manage category-->
+                            <asp:Panel runat="server" class="nav navbar-nav" ID="pnlmanage" Visible="false">
+                                <li class="dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" 
+data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage Category <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" 
+href="<%= ResolveClientUrl("~/tutorials/week/managecat") %>">Add Category</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a class="dropdown-item" 
+href="<%= ResolveClientUrl("~/tutorials/week/manageclassification") %>">Add Classification Level</a></li>
+                                    </ul>
+                                </li>
 </asp:Panel>
+
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="/testimonials">Testimonials</a></li>
@@ -132,56 +163,124 @@ Text="Deactivate Account" CssClass="btn btn-outline-danger" /></li>
                                             href="~/tutorials/week2/task1datetime">Date and Time</a></li>
                                         <li><a runat="server" class="dropdown-item"
                                             href="~/tutorials/week2/task3controlevent">Control Events</a></li>
+                                         <li><a runat="server" class="dropdown-item"
+                                            href="~/tutorials/week2/lab2.aspx">Lab 2</a></li>
                                     </ul>
+                                </li>
+
+                                
+                                <li class="dropdown-submenu">
                                     <a class="dropdown-item dropdown-toggle"
                                         data-bs-toggle="dropdown" href="#">week 3</a>
                                     <ul class="dropdown-menu">
                                         <li><a runat="server" class="dropdown-item"
-                                            href="~/tutorials/week3/formdemo">Form Demo</a></li>
-                                        <li><a runat="server" class="dropdown-item"
-                                            href="~/tutorials/week2/task3controlevent">Control Events</a></li>
-                                        <li><a runat="server" class="dropdown-item"
-                                            href="~/tutorials/week2/task1datetime">TODO</a></li>
-                                        <li><a runat="server" class="dropdown-item"
-                                            href="~/tutorials/week2/task1datetime">TODO</a></li>
-                                        <li><a runat="server" class="dropdown-item"
-                                            href="~/tutorials/week2/task1datetime">TODO</a></li>
+                                            href="~/tutorials/week3/form">Form</a></li>
+                                         <li><a runat="server" class="dropdown-item"
+                                            href="~/tutorials/week3/lab3.aspx">Lab 3</a></li>
                                     </ul>
                                 </li>
+
+                                  
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle"
+                                        data-bs-toggle="dropdown" href="#">week 4</a>
+                                    <ul class="dropdown-menu">
+                                         <li><a runat="server" class="dropdown-item"
+                                            href="~/tutorials/week4/lab4.aspx">Lab 4</a></li>
+                                    </ul>
+                                </li>
+
+                                    
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle"
+                                        data-bs-toggle="dropdown" href="#">week 5</a>
+                                    <ul class="dropdown-menu">
+                                         <li><a runat="server" class="dropdown-item"
+                                            href="~/tutorials/week5/dashboard.aspx">Dashboard</a></li>
+                                        <li><a runat="server" class="dropdown-item"
+                                             href="~/tutorials/week5/login.aspx">Login</a></li>
+                                         <li><a runat="server" class="dropdown-item"
+                                            href="~/tutorials/week5/showaddress.aspx">Show address</a></li>
+                                         <li><a runat="server" class="dropdown-item"
+                                              href="~/tutorials/week5/showcode.aspx">Show Code</a></li>
+                                         <li><a runat="server" class="dropdown-item"
+                                            href="~/tutorials/week5/Updateprofile.aspx">Update Profile</a></li>
+                                         <li><a runat="server" class="dropdown-item"
+                                             href="~/tutorials/week5/viewusers.aspx">View Users</a></li>
+                                        </ul>
+                                </li>
+
+
+                               <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle"
+                                 data-bs-toggle="dropdown" href="#">week 6</a>
+                             <ul class="dropdown-menu">
+                         <li><a runat="server" class="dropdown-item"
+                          href="~/tutorials/week6/ex1.aspx">Ex1</a></li>
+                        <li><a runat="server" class="dropdown-item"
+                             href="~/tutorials/week6/ex2.aspx">Ex2</a></li>
+                        <li><a runat="server" class="dropdown-item"
+                         href="~/tutorials/week6/ex3.aspx">Ex3</a></li>
+                        <li><a runat="server" class="dropdown-item"
+                         href="~/tutorials/week6/ex4.aspx">Ex4</a></li>
+                        <li><a runat="server" class="dropdown-item"
+                        href="~/tutorials/week6/stats.aspx">View stats</a></li>
+                        
+                     </ul>
+                     </li>
+
+                                          <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle"
+                                     data-bs-toggle="dropdown" href="#">week 7</a>
+                                <ul class="dropdown-menu">
+                            <li><a runat="server" class="dropdown-item"
+                         href="~/tutorials/week7/ex1.aspx">Ex1</a></li>
+                    <li><a runat="server" class="dropdown-item"
+                     href="~/tutorials/week7/details.aspx">Details</a></li>
+            <li><a runat="server" class="dropdown-item"
+             href="~/tutorials/week7/managemovies.aspx">Manage Movies</a></li>
+            <li><a runat="server" class="dropdown-item"
+             href="~/tutorials/week6/search.aspx">Search</a></li>
+            
+   
+</ul>
+</li>
                             </ul>
                         </li>
                         <%-- End of tutorial menu--%>
                     </ul>
                     <div class="navbar-collapse flex-grow-1 text-right" id="myNavbar">
                         <ul class="navbar-nav ms-auto flex-nowrap">
-
+                            <li class="nav-item"><a class="nav-link" runat="server" id="A1"
+                                href="~/Login">Login</a></li>
                             <asp:Panel runat="server" ID="pnllog">
-                                <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle"
-                                        data-bs-toggle="dropdown" role="button" aria-haspopup="true"
-                                        aria-expanded="false">Login<span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a class="dropdown-item"
-                                                href="<%= ResolveClientUrl("~/tutorials/week5/login") %>">User</a></li>
-                                        <li class="nav-item">
-                                            <a id="logadmin" href="#" class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#lgadmin">Admin</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li class="nav-item">
-                                            <a rel="modal:open" class="dropdown-item" id="modopen"
-                                                data-bs-toggle="modal" href="#modadmin">Sub Admin</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </asp:Panel>
+ <li class="nav-item dropdown">
+ <a href="#" class="nav-link dropdown-toggle"
+data-bs-toggle="dropdown" role="button" aria-haspopup="true"
+aria-expanded="false">Login<span class="caret"></span></a>
+ <ul class="dropdown-menu">
+ <li class="nav-item">
+ <a class="dropdown-item"
+href="<%= ResolveClientUrl("~/tutorials/week5/login") %>">User</a></li>
+ <li class="nav-item">
+<a id="logadmin" href="#" class="dropdown-item" data-bs-toggle="modal"
+data-bs-target="#lgadmin">Admin</a></li>
+ <li role="separator" class="divider"></li>
+ <li class="nav-item">
+<a rel="modal:open" class="dropdown-item" id="modopen"
+data-bs-toggle="modal" href="#modadmin">Sub Admin</a>
+</li>
+ </ul>
+ </li>
+</asp:Panel>
                             <li class="nav-item"><a class="nav-link" runat="server" id="hyregister"
                                 href="~/Register">Register</a></li>
                         </ul>
                     </div>
+
                     <asp:Panel runat="server" ID="lgregis">
-<asp:Label runat="server" ID="lbllgged"></asp:Label>
-<asp:Button runat="server" ID="btnlgout" Text="Log out"
+ <asp:Label runat="server" ID="lbllgged"></asp:Label>
+ <asp:Button runat="server" ID="btnlgout" OnClick="btnlgout_Click" Text="Log out"
 CssClass="btn btn-outline-info" Visible="false" />
 </asp:Panel>
                 </div>
@@ -190,13 +289,14 @@ CssClass="btn btn-outline-info" Visible="false" />
                 <div class="row pt-4 my-4">
                     <div class="outer col-sm-9">
 
-                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                        </asp:ContentPlaceHolder>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
 
                     </div>
                     <aside class="outer col-sm-2 offset-sm-1">
                         <div class="ads d-none d-xl-block">
-                            <asp:AdRotator ID="AdRotator1" AdvertisementFile="~/App_Data/ads.xml" CssClass="banner" runat="server" />
+                         <asp:AdRotator ID="AdRotator1" 
+                             AdvertisementFile="~/App_Data/ads.xml" 
+                             runat="server" />   
                         </div>
                     </aside>
                 </div>
@@ -249,53 +349,72 @@ CssClass="btn btn-outline-info" Visible="false" />
                 </div>
             </footer>
         </div>
+
         <!-- Login Modal Admin -->
-        <div class="modal fade" id="modadmin" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Sub Admin Login</h4>
-                        <button type="button" class="close"
-                            data-bs-dismiss="modal">
-                            &times;</button>
-                    </div>
-                    <div class="modal-body">
+ <div class="modal fade" id="modadmin" role="dialog">
+ <div class="modal-dialog">
+ <!-- Modal content-->
+ <div class="modal-content">
+ <div class="modal-header">
+ <h4 class="modal-title">Sub Admin Login</h4>
+ <button type="button" class="close"
+ data-bs-dismiss="modal">&times;</button>
+ </div>
+<div class="modal-body">
+    <user:Login runat="server"  ValidationGroup="admingroup" ID="subadminlogin" />
+ 
+<br />
+ <asp:Label ID="lblmsg" runat="server"></asp:Label>
+ <div>
+ <asp:Button ID="btnLogin"
+     ValidationGroup="admingroup"
+CssClass="btn btn-success btn-block" runat="server" Text="Login" OnClick="btnLogin_Click" />
+ 
+ </div>
+ </div>
+<div class="modal-footer">
+ <button type="button" class="btn btn-danger pull-left"
+data-bs-dismiss="modal">Close</button>
+ <p>Not a member? <a href="#">Sign Up</a></p>
+ <p>Forgot <a href="#">Password?</a></p>
+ </div>
+ </div>
+ </div>
+ </div>
 
-                        
-                        <user:logincrcl runat="server" ID="logincrcl" ValidationGroup="subadminlogingroup" />
-                        <br />
-                        <asp:Label ID="lblmsg" runat="server"></asp:Label>
-                        <div>
-                            <asp:Button ID="btnLogin"
-                                CssClass="btn btn-success btn-block" runat="server" Text="Login" ValidationGroup="subadminlogingroup" />
-
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger pull-left"
-                            data-bs-dismiss="modal">
-                            Close</button>
-                        <p>Not a member? <a href="#">Sign Up</a></p>
-                        <p>Forgot <a href="#">Password?</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <script>
+            function adminModal() {
+                $(document).ready(function () {
+                    $('#modadmin').modal('show');
+                });
+            }
+        </script>
     </form>
 
-    <script>
-        function adminModal() {
-            $(document).ready(function () {
-                $('#modadmin').modal('show');
-            });
-        }
-    </script>
+
     <script src='<%= ResolveClientUrl("~/Scripts/jquery-3.7.1.js") %>'>
     </script>
+    <script src="Scripts/datatablelib.js"></script>
 
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
     </script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.13.7/datatables.min.js"></script>
+    <script src="Scripts/datatablelib.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    
+   
+    <script type="text/javascript"
+src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script type="text/javascript"
+src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
+<script type="text/javascript"
+src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.print.min.js"></script>
 </body>
 </html>

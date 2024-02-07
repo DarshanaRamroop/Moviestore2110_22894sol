@@ -1,4 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="logincrcl.ascx.cs" Inherits="Moviestore2110_22894.tutorials.week5.logincrcl" %>
+
+
 <asp:Label ID="lblUsername" runat="server"><span class="fas fa-user"></span> User
 Name</asp:Label>
 <div class="div_texbox">

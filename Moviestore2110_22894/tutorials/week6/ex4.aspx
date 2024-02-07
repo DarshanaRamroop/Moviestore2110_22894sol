@@ -26,8 +26,6 @@ Height="200" runat="server" />
 
 </p>
 
-<p><%#Eval("Description",, "{0:c}") %></p>~
-
 <div>
 <asp:LinkButton ID="lnkmovdetails"
 runat="server" Text="Subscribe" 

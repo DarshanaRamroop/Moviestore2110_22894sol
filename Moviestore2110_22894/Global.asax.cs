@@ -17,5 +17,10 @@ namespace Moviestore2110_22894
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        void Session_Start(object sender, EventArgs e)
+        {
+            Response.Redirect("~/home.aspx");
+        }
     }
 }

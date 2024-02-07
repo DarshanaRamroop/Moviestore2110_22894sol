@@ -33,12 +33,12 @@ namespace Moviestore2110_22894.tutorials.week5
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
 
         /// <summary>
-        /// rndquotation1 control.
+        /// rndquotation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Moviestore2110_22894.tutorials.week5.rndquotation rndquotation1;
+        protected global::Moviestore2110_22894.tutorials.week5.rndquotation rndquotation;
     }
 }

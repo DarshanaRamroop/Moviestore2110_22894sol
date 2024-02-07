@@ -19,12 +19,7 @@ namespace Moviestore2110_22894.tutorials.week5
             //checks whether the session variable has been created
             //from the login page and if null redirect to login page
             //else grant access to the page and display username
-            if (string.IsNullOrEmpty(Session["userun"].ToString()))
-            {
-                Response.Redirect("~/tutorials/week5/login.aspx");
-            }
-            else
-            {
+            
                 if (!Page.IsPostBack)
                 {
                     // Create Connection
@@ -44,7 +39,7 @@ namespace Moviestore2110_22894.tutorials.week5
                     {
                         //retrieve the values using the reader[“fieldname”] and
                         //store in corresponding Textboxes
-                        txtFname.Text = reader["firstname"].ToString();
+                       txtFname.Text = reader["firstname"].ToString(); 
                         txtLname.Text = reader["lastname"].ToString();
                         txtEmail.Text = reader["email"].ToString();
                     }
@@ -64,7 +59,7 @@ namespace Moviestore2110_22894.tutorials.week5
                     rptimg.DataBind();
                     con.Close();
                 }
-            }
+            
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)

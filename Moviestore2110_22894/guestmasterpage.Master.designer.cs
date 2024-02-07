@@ -60,6 +60,33 @@ namespace moviestore2110_22876
         protected global::System.Web.UI.WebControls.Button btndeacuser;
 
         /// <summary>
+        /// pnlmanagemov control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlmanagemov;
+
+        /// <summary>
+        /// pnlmanage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlmanage;
+
+        /// <summary>
+        /// A1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A1;
+
+        /// <summary>
         /// pnllog control.
         /// </summary>
         /// <remarks>
@@ -150,13 +177,13 @@ namespace moviestore2110_22876
         protected global::System.Web.UI.WebControls.Image Image3;
 
         /// <summary>
-        /// logincrcl control.
+        /// subadminlogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Moviestore2110_22894.tutorials.week5.logincrcl logincrcl;
+        protected global::Moviestore2110_22894.tutorials.week5.logincrcl subadminlogin;
 
         /// <summary>
         /// lblmsg control.

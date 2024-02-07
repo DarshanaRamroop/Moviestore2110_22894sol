@@ -119,7 +119,10 @@ namespace Moviestore2110_22894.tutorials.week5
             else
             {
                 //delete content of password field
-
+                lblmsg.Style.Add("margin-left", "10%");
+                lblmsg.ForeColor = System.Drawing.Color.Red;
+                username = "";
+                password = "";
                 lblmsg.Text = "You are not registered or your account has been suspended!";
             }
         }

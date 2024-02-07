@@ -102,9 +102,7 @@ Office Totals</asp:Label>
     <hr />
     <asp:GridView ID="gvs" OnSelectedIndexChanged="gvs_SelectedIndexChanged" DataKeyNames="Movie_Id" AutoGenerateColumns="false" CssClass="border-0"
         ClientIDMode="Static" Width="800" runat="server">
-        <HeaderStyle BackColor="Black" ForeColor="White" Font-Bold="true"
-            Height="30" />
-        <AlternatingRowStyle BackColor="#f5f5f5" />
+       
         <Columns>
             <asp:TemplateField>
                 <ItemTemplate>
